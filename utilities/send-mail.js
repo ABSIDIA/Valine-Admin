@@ -60,7 +60,7 @@ exports.notice = (comment) => {
 
   if (!process.env.DISABLE_EMAIL) {
     const emailSubject =
-      "哇！「" + process.env.SITE_NAME + "」上有人回复了你啦！快点我！";
+      "📌 哇！「" + process.env.SITE_NAME + "」上有人回复了你啦！快点我！💦";
     const emailContent = noticeTemplate({
       siteName: process.env.SITE_NAME,
       siteUrl: process.env.SITE_URL,
@@ -97,7 +97,7 @@ exports.notice = (comment) => {
     "\r\n > " +
     comment.get("comment") +
     "\r\n" +
-    "原文地址  " +
+    "原文地址 👉 " +
     process.env.SITE_URL +
     comment.get("url") +
     "\r\n #### 评论人\r\n" +
@@ -190,7 +190,7 @@ exports.send = (currentComment, parentComment) => {
     return;
   }
   const emailSubject =
-    "哇！「" + process.env.SITE_NAME + "」上有人回复了你啦！快点我！";
+    "📌 哇！「" + process.env.SITE_NAME + "」上有人回复了你啦！快点我！💦";
   const main_color = process.env.MAIN_COLOR ? process.env.MAIN_COLOR : "orange";
   const main_img = process.env.MAIN_IMG
     ? process.env.MAIN_IMG
