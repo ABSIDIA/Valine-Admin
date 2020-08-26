@@ -49,7 +49,7 @@ app.get("/", function (req, res) {
       INFO: process.env.INFO ? process.env.INFO : "",
       favicon: process.env.FAVICON
         ? process.env.FAVICON
-        : "https://cdn.jsdelivr.net/gh/GlumeL/Static@master/Butterfly/img/favicon.webp",
+        : "https://cdn.jsdelivr.net/gh/sviptzk/StaticFile_HEXO/butterfly/img/favicon.ico",
     });
   }
 });
