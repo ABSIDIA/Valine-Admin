@@ -155,9 +155,10 @@ li {
 }
 
 .vcard {
-  border-radius: 25px;
-  border: 2px solid #b5b5b5;
-  padding: 20px;
+   border-radius: 25px;
+   padding: 20px;
+   margin: 40px;
+   box-shadow: 0px 0px 5px #007cff5e;
 }
 
 .vcard + .vcard {
@@ -165,7 +166,7 @@ li {
 }
 
 .vcard:hover {
-  box-shadow: 2px 2px 6px #5f5f5f;
+ box-shadow: 0px 0px 5px #5f5f5f;
 }
 
 .check {
